@@ -1,6 +1,9 @@
 # Testes Além do Código
 Projeto utilizado na apresentação da palestra "Testes Além Do Código" na trilha Testes no TDC Connections 2022.
 
+[![CI](https://github.com/jonathanmdr/method-chain-with-dsl-tests/actions/workflows/ci.yml/badge.svg)](https://github.com/jonathanmdr/method-chain-with-dsl-tests/actions/workflows/ci.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/jonathanmdr/method-chain-with-dsl-tests/badge)](https://www.codefactor.io/repository/github/jonathanmdr/method-chain-with-dsl-tests)
+
 ## Sobre o Projeto
 O projeto consiste em uma pequena calculadora contendo as quatro operações básicas
 sendo elas: `soma`, `subtração`, `multiplicação` e `divisão`.

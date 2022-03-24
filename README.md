@@ -5,8 +5,7 @@ Projeto utilizado na apresentação da palestra "Testes Além Do Código" na tri
 [![CodeFactor](https://www.codefactor.io/repository/github/jonathanmdr/method-chain-with-dsl-tests/badge)](https://www.codefactor.io/repository/github/jonathanmdr/method-chain-with-dsl-tests)
 
 ## Sobre o Projeto
-O projeto consiste em uma pequena calculadora contendo as quatro operações básicas
-sendo elas: `soma`, `subtração`, `multiplicação` e `divisão`.
+O projeto consiste em uma pequena calculadora contendo as quatro operações básicas: `soma`, `subtração`, `multiplicação` e `divisão`.
 
 ### Exemplo de teste tradicionalmente escrito:
 ```java
@@ -39,7 +38,7 @@ void shouldBeApplySumWithDsl() {
 }
 ```
 
-### Exemplo de com cenário de falha utilizando DSL + Method Chaining:
+### Exemplo com cenário de falha utilizando DSL + Method Chaining:
 ```java
 @Test
 void shouldBeThrownBusinessExceptionWhenApplyingDivisionByZero() {

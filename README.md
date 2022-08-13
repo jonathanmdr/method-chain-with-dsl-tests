@@ -11,9 +11,9 @@ O projeto consiste em uma pequena calculadora contendo as quatro operações bá
 ```java
 @Test
 void shouldBeApplySum() {
-    OperationData operationData = OperationDataBuilder.builder()
-        .firstNumber(BigDecimal.TEN)
-        .secondNumber(BigDecimal.TEN)
+    OperationData operationData = OperationData.builder()
+        .firstNumber(10)
+        .secondNumber(10)
         .build();
 
     BigDecimal actual = SUM.execute(operationData);

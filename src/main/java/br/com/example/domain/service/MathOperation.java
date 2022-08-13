@@ -28,14 +28,14 @@ public enum MathOperation {
         }
     );
 
-    private final Function<OperationData, BigDecimal> function;
+    private final Function<OperationData, BigDecimal> mathFunction;
 
-    MathOperation(final Function<OperationData, BigDecimal> function) {
-        this.function = function;
+    MathOperation(final Function<OperationData, BigDecimal> mathFunction) {
+        this.mathFunction = mathFunction;
     }
 
     public BigDecimal execute(final OperationData data) {
-        return function.apply(data);
+        return mathFunction.apply(data);
     }
 
 }

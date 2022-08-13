@@ -1,7 +1,6 @@
 package br.com.example.domain;
 
 import br.com.example.domain.model.OperationData;
-import br.com.example.domain.model.OperationDataBuilder;
 import br.com.example.domain.service.MathOperation;
 
 import java.math.BigDecimal;
@@ -10,9 +9,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String ... args) {
-        OperationData operationData = OperationDataBuilder.builder()
-            .firstNumber(BigDecimal.TEN)
-            .secondNumber(BigDecimal.TEN)
+        OperationData operationData = OperationData.builder()
+            .firstNumber(10)
+            .secondNumber(10)
             .build();
 
         Arrays.stream(MathOperation.values())

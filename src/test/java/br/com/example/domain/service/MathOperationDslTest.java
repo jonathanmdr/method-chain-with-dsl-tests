@@ -13,7 +13,7 @@ import static br.com.example.domain.service.MathOperation.MULTIPLICATION;
 import static br.com.example.domain.service.MathOperation.SUBTRACTION;
 import static br.com.example.domain.service.MathOperation.SUM;
 
-class MathOperationTest {
+class MathOperationDslTest {
 
     @Test
     void shouldBeApplySum() {
@@ -92,7 +92,7 @@ class MathOperationTest {
         return new Dsl();
     }
 
-    class Dsl {
+    static class Dsl {
         private BigDecimal firstNumber;
         private BigDecimal secondNumber;
 
@@ -111,7 +111,7 @@ class MathOperationTest {
             return new DslExecutor(operation, operationData);
         }
 
-        class DslExecutor {
+        static class DslExecutor {
             private BigDecimal actualResult;
             private Throwable actualException;
 
